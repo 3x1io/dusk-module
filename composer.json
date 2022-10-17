@@ -1,0 +1,48 @@
+{
+    "name": "3x1io/dusk-module",
+    "description": "Laravel Dusk unit test with GUI for VILT Stack",
+    "type": "laravel-module",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "VILT",
+        "generator",
+        "resource",
+        "page",
+        "widget",
+        "pages",
+        "modal",
+        "admin one",
+        "vuejs",
+        "ineriajs",
+        "tailwind.css",
+        "dusk",
+        "unittest",
+        "GUI"
+    ],
+    "homepage": "https://3x1.io",
+    "authors": [
+        {
+            "name": "Fady Mondy",
+            "email": "info@3x1.io",
+            "role": "Senior Fullstack Developer"
+        }
+    ],
+    "require": {
+        "queents/vilt": "^1.0",
+        "laravel/dusk": "^7.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Dusk\\": ""
+        }
+    }
+}

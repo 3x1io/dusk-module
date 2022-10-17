@@ -1,0 +1,13 @@
+{
+    "name": "Dusk",
+    "alias": "dusk",
+    "description": "Laravel Dusk unit test with GUI for VILT Stack",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Dusk\\Providers\\DuskTestServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

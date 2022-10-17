@@ -1,0 +1,34 @@
+<?php
+
+namespace Modules\{{ moduleName }}\Tests;
+
+use Modules\Base\Services\Core\Abstracts\HasMake;
+use Modules\Dusk\Services\Components\Log;
+use Modules\Dusk\Services\Core\Browser;
+use Modules\Dusk\Services\Core\Chrome;
+
+class {{ modelName }}Test extends HasMake
+{
+    private Chrome $dusk;
+
+    public function __construct()
+    {
+        $this->dusk = Browser::make('web')->run();
+    }
+
+    public function run():void
+    {
+        try {
+            $this->dusk->browse(function ($browser) {
+                //Your Logic Here
+            });
+
+        }catch (\Exception $e){
+            if(!strpos($e, 'file_put_contents')){
+                Log::make("Login Failed Error: " . $e)->type('danger')->save();
+            }
+        }
+
+        $this->dusk->stop();
+    }
+}
