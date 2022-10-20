@@ -18,8 +18,11 @@ class DuskTestController extends Controller
      */
     public function index(): \Illuminate\Http\RedirectResponse
     {
-        UserLogin::make('web')->run();
-        //        CreateUserTest::make('web')->run();
+        $classes = config('dusk.classes');
+
+        foreach($classes as $item){
+            $item::make('web')->run();
+        }
 
         return Alert::make(__('Dusk Testing Run Success'))->fire();
     }

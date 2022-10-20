@@ -46,6 +46,6 @@ class TestGenerator implements GeneratorInterface
             "titleLabel" => Str::ucfirst(Str::singular($this->modelName)),
             "modelName" => $this->modelName,
             "moduleName" => $this->moduleName,
-        ], module_path('DuskTest') . '/stubs/');
+        ], module_path('Dusk') . '/stubs/');
     }
 }

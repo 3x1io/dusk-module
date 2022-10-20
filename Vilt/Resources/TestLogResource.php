@@ -20,6 +20,7 @@ class TestLogResource extends Resource
     public ?string $icon = "bx bx-test-tube";
     public ?string $group = "Tools";
     public ?bool $api = true;
+    public ?bool $import = false;
 
     public function rows(): array
     {

@@ -1,5 +1,8 @@
 <?php
 
 return [
-    'name' => 'DuskTest'
+    'name' => 'DuskTest',
+    'classes' => [
+        \Modules\Dusk\Tests\UserLogin::class
+    ]
 ];
